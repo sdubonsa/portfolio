@@ -9,9 +9,9 @@ export function AchievementsSection() {
   const [openId, setOpenId] = useState<string | null>(caseStudies[0]?.id || null);
 
   return (
-    <section className="py-8">
-      <div className="flex items-center gap-2 mb-8">
-        <Terminal className="w-5 h-5 text-white/60" />
+    <section className="border-t border-white/10 pt-8 mt-8">
+      <div className="flex items-center gap-2 mb-8 text-white/80">
+        <Terminal className="w-5 h-5 text-fintech-warning" />
         <h2 className="text-2xl font-bold tracking-tight">Professional Achievements</h2>
       </div>
 

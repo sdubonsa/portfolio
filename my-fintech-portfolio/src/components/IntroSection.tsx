@@ -57,7 +57,7 @@ export function IntroSection() {
           </h1>
           
           <h2 className="text-xl md:text-2xl text-fintech-accent font-mono tracking-wider uppercase">
-            Fintech Systems Engineer
+            Fintech Software Engineer
           </h2>
         </motion.div>
 

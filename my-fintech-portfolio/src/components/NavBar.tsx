@@ -41,27 +41,29 @@ export function NavBar() {
   };
 
   return (
-    <nav className="border-b border-white/10 mb-8 pb-4 sticky top-0 bg-[#0a0a0a]/80 backdrop-blur-md z-50 pt-4 -mx-4 px-4 md:-mx-8 md:px-8">
-      <ul className="flex justify-end gap-6 overflow-x-auto no-scrollbar">
-        {navItems.map((item) => (
-          <li key={item.id} className="shrink-0">
-            <a
-              href={`#${item.id}`}
-              onClick={(e) => scrollToSection(e, item.id)}
-              className={`
-                font-mono text-sm tracking-widest uppercase transition-colors flex items-center gap-2
-                ${activeSection === item.id 
-                  ? "text-fintech-accent font-bold" 
-                  : "text-white/60 hover:text-white"
-                }
-              `}
-            >
-              <span className={`h-1.5 w-1.5 rounded-full transition-colors ${activeSection === item.id ? "bg-fintech-accent" : "bg-transparent"}`} />
-              {item.label}
-            </a>
-          </li>
-        ))}
-      </ul>
+    <nav className="fixed top-0 left-0 right-0 border-b border-white/10 bg-[#0a0a0a]/80 backdrop-blur-md z-50">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-4">
+        <ul className="flex justify-end gap-6 overflow-x-auto no-scrollbar">
+          {navItems.map((item) => (
+            <li key={item.id} className="shrink-0">
+              <a
+                href={`#${item.id}`}
+                onClick={(e) => scrollToSection(e, item.id)}
+                className={`
+                  font-mono text-sm tracking-widest uppercase transition-colors flex items-center gap-2
+                  ${activeSection === item.id 
+                    ? "text-fintech-accent font-bold" 
+                    : "text-white/60 hover:text-white"
+                  }
+                `}
+              >
+                <span className={`h-1.5 w-1.5 rounded-full transition-colors ${activeSection === item.id ? "bg-fintech-accent" : "bg-transparent"}`} />
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 }

@@ -21,8 +21,8 @@ const leadershipItems = [
 export function LeadershipSection() {
   return (
     <section className="border-t border-white/10 pt-8 mt-8">
-      <div className="flex items-center gap-2 mb-6 text-fintech-accent">
-        <Mic className="w-5 h-5" />
+      <div className="flex items-center gap-2 mb-6 text-white/80">
+        <Mic className="w-5 h-5 text-fintech-warning" />
         <h2 className="text-2xl font-bold tracking-tight">Technical Leadership</h2>
       </div>
       

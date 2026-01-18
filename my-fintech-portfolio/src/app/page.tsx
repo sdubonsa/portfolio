@@ -10,11 +10,10 @@ import { Shield, Building2 } from "lucide-react";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0a0a0a]">
+      <NavBar />
       <IntroSection />
 
       <div className="p-4 md:p-8 max-w-7xl mx-auto space-y-8 relative">
-        <NavBar />
-
         {/* Bio / Status Section */}
         <header className="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-white/10 pb-6 gap-4">
           <div>

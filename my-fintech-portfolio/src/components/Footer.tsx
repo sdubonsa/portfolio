@@ -6,7 +6,7 @@ export function Footer() {
       <div className="flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-center md:text-left">
           <h3 className="text-white font-bold text-lg">Santiago Dubon Sanchez</h3>
-          <p className="text-white/40 text-sm font-mono mt-1">Fintech Systems Engineer</p>
+          <p className="text-white/40 text-sm font-mono mt-1">Fintech Software Engineer</p>
         </div>
 
         <div className="flex items-center gap-6">
